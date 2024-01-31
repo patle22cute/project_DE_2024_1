@@ -1,15 +1,14 @@
-# Add
-- generate ssh key before create a new compute instance (from local machine)
+# Tạo khóa ssh để kết nối vào VM 
+- Tạo khóa ssh trước khi tạo một máy ảo trên GCP
 - ssh-keygen -t rsa -f gcp -C datacourses -b 2048 
 - name: gcp
 - user: datacourses
-- add .public key to metadata of VMs
-- add key for VM (airflow/kafka)
+- thêm public key vào metadata trên Compute Engine
 
-# add & configure ssh key into VM via terminal (Bash Terminal)
+# Cách dùng private key để kết nối đến VM và tạo file config để thuận tiện cho việc kết nối 
 - ssh -i ~/.ssh/name of private key Name of Vms@External IP of VMs
 - ssh -i ~/.ssh/gcp datacourses@External IP of VMs
-- htop: able ssh to VMs (view VMs)
+- htop: xem chi tiết VM (view VMs)
 - touch ~/.ssh/config
 - code ~/.ssh/config
 - config to access VMs
@@ -20,14 +19,3 @@
 - connecting to VMs 
 - ssh ABC 
 
-
-# Install prerequisites for VMs
-- update
-sudo apt-get update
-- Anacoda
-bash: wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
-
-- Docker/docker-compose
-
-# Need to start connecting with Vms
-- ssh -i ./gcp datacourses@
