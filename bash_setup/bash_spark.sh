@@ -39,3 +39,9 @@ echo "py4j versions is $py4j"
 echo '' >> ~/.bashrc
 echo 'export PYTHONPATH="${SPARK_HOME}/python/:$PYTHONPATH"' >> ~/.bashrc
 echo 'export PYTHONPATH="${SPARK_HOME}/python/lib/${!py4j}:$PYTHONPATH"' >> ~/.bashrc
+
+echo "Copying requirements.txt..."
+cp ~/final_project_2024/spark/requirements.txt .
+
+echo "Installing dependencies..."
+pip3 install -r requirements.txt
