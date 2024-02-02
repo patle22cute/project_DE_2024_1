@@ -14,3 +14,8 @@
 - cd final_project_2024/kafka
 - docker-compose build 
 - docker-compose up
+
+# Chạy kafka producer
+- cd ~/final_project_2024/kafka
+- chmod +x scripts_run.sh
+- bash ./scripts_run.sh
