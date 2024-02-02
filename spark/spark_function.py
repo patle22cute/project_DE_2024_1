@@ -2,7 +2,8 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import from_json, col 
 
 def spark_session(app_name):
-    spark = SparkSession.builder.appName(app_name).master("spark://spark-master:7077").getOrCreate()
+    # spark = SparkSession.builder.appName(app_name).master("spark://spark-master:7077").getOrCreate()
+    spark = SparkSession.builder.appName(app_name).master("yarn").getOrCreate()
     return spark
 
 def read_stream(spark, kafka_address, kafka_port, topic, starting_offset="earliest"):
