@@ -12,9 +12,9 @@
 
 # Thiết lập các biến môi trường cho Airflow 
 - export GCP_PROJECT_ID=External IP of VM airflow
-- export GCP_GCS_BUCKET = 
+- export GCP_GCS_BUCKET = Name of 
 
 # Tiếng hành cài đặt Airflow cho VM
-- bash ./final_project_2024/scripts/bash_airflow.sh 
+- bash ./final_project_2024/bash_setup/bash_airflow.sh 
 
 # Forwarding port ở VS Code 
