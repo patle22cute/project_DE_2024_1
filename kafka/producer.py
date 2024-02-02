@@ -6,7 +6,7 @@ from datetime import datetime
 import csv
 import json
 
-path = 'credit_card/credit_card_transactions.csv'
+path = '~/final_project_2024/credit_card/credit_card_transactions.csv'
 
 producer_config = {
     'bootstrap.servers':'localhost:9092',

@@ -40,6 +40,8 @@ echo '' >> ~/.bashrc
 echo 'export PYTHONPATH="${SPARK_HOME}/python/:$PYTHONPATH"' >> ~/.bashrc
 echo 'export PYTHONPATH="${SPARK_HOME}/python/lib/${!py4j}:$PYTHONPATH"' >> ~/.bashrc
 
+sudo apt install python3-pip
+
 echo "Copying requirements.txt..."
 cp ~/final_project_2024/spark/requirements.txt .
 
