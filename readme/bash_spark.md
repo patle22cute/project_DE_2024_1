@@ -10,5 +10,8 @@
 - export KAFKA_ADDRESS=External IP của VM spark 
 - export GCP_GCS_BUCKET=ID của project
 
+# Cài đặt
+- bash ~/final_project_2024/bash_setup/bash_spark.sh && exec newgrp docker
+
 # Tiến hành chạy spark, 
 - spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 ~/final_project_2024/spark/read_kafka.py
