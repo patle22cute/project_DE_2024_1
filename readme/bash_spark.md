@@ -10,5 +10,5 @@
 - export KAFKA_ADDRESS=External IP của VM spark 
 - export GCP_GCS_BUCKET=ID của project
 
-# Tiến hành chạy spark
+# Tiến hành chạy spark, 
 - spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 stream_all_events.py

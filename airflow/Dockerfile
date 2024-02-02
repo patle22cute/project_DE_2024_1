@@ -4,7 +4,9 @@ ENV AIRFLOW_HOME=/opt/airflow
 
 USER root
 RUN apt-get update && ACCEPT_EULA=Y apt-get upgrade -y && apt-get install -y git
+USER airflow
 RUN pip install --upgrade pip
+USER root
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt

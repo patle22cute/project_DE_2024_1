@@ -5,11 +5,12 @@
 - git clone https://github.com/patle22cute/final_project_2024.git
 
 # Tiến hành chạy cài đặt Docker, docker-compose và Anacoda
-- bash ./bash_vms.sh && exec newgrp docker
+- bash ./final_project_2024/bash_setup/bash_vms.sh && exec newgrp docker
 
 # Thiết lập các biến môi trường cho Kafka
 - export KAFKA_ADDRESS=External IP of VM Kafka in GCP(If use kafka in local machine, KAFKA was 127.0.0.1)
 
 # Chạy khởi động kafka
+- cd final_project_2024/kafka
 - docker-compose build 
 - docker-compose up
