@@ -79,23 +79,23 @@ resource "google_compute_instance" "kafka_vm_instance" {
 
 # Create google compute airflow
 
-# resource "google_compute_instance" "airflow_vm_instance" {
-#   name                      = "datacourses-airflow-instance"
-#   machine_type              = "e2-standard-2"
-#   zone                      = var.zone
-#   allow_stopping_for_update = true
-#   boot_disk {
-#     initialize_params {
-#       image = var.vm_image
-#       size  = 10
-#     }
-#   }
-#   network_interface {
-#     network = var.network
-#     access_config {
-#     }
-#   }
-# }
+resource "google_compute_instance" "airflow_vm_instance" {
+  name                      = "datacourses-airflow-instance"
+  machine_type              = "e2-standard-2"
+  zone                      = var.zone
+  allow_stopping_for_update = true
+  boot_disk {
+    initialize_params {
+      image = var.vm_image
+      size  = 10
+    }
+  }
+  network_interface {
+    network = var.network
+    access_config {
+    }
+  }
+}
 
 # Create google dataproc cluster
 
