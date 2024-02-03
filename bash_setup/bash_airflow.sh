@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Changing permissions for dbt folder..."
-cd ~/final_project_2024/ && sudo chmod -R 777 dbt
+cd ~/final_project_2024/
 
 echo "Building airflow docker images..."
 cd ~/final_project_2024/airflow
